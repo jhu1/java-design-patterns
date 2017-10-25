@@ -35,7 +35,7 @@ Wikipedia says
 
 **Programmatic Example**
 
-Lets take the troll example. First of all we have a simple troll implementing the troll interface
+Let's take the troll example. First of all we have a simple troll implementing the troll interface
 
 ```
 public interface Troll {
@@ -105,9 +105,9 @@ troll.attack(); // The troll tries to grab you!
 troll.fleeBattle(); // The troll shrieks in horror and runs away!
 
 // change the behavior of the simple troll by adding a decorator
-Troll clubbed = new ClubbedTroll(troll);
-clubbed.attack(); // The troll tries to grab you! The troll swings at you with a club!
-clubbed.fleeBattle(); // The troll shrieks in horror and runs away!
+troll = new ClubbedTroll(troll);
+troll.attack(); // The troll tries to grab you! The troll swings at you with a club!
+troll.fleeBattle(); // The troll shrieks in horror and runs away!
 ```
 
 ## Applicability
